@@ -13,27 +13,47 @@ module TestBench;
       R = 1;
       A_Traffic = 0;
       B_Traffic = 0;
-      #1500
+      #1050
      
-      R=0;
+      R = 0;
       
       #5000
       
       A_Traffic = 1;
       
-      #125000
+      #2000
       A_Traffic = 0;
       
-      #125000
-       B_Traffic = 1;
-       
+      #90000
+      B_Traffic = 1;
+      
+      #11000
+      B_Traffic = 0;
+      
+      #2000
+      A = 1;
+      #1010
+      A = 0;
+      #9000
+      R = 1;
+      #1010
+      R = 0;
+      #2000
+      B = 1;
+      #1010
+      B = 0;
+      #10000
+      R = 1;
+      #1010
+      R = 0;      
+      
        
       
       
     end
     
   initial CLK = 0;
-  always #1000 CLK = ~CLK; //change it!
+  always #500 CLK = ~CLK;
   
   
 endmodule  
